@@ -1,5 +1,5 @@
 
-//let unsortedWords = ["dino", "cowboy", "baby", "ant"]
+//let unsortedWords = ["iwantsushi", "cowboy", "jaggu", "ant"]
 
 var words = [String]()
 
@@ -10,12 +10,13 @@ while let line = readLine() {
 }
 
 func swap(strings:inout [String], firstIndex:Int, secondIndex:Int) {
-    
+   
     let tmp = strings[firstIndex]
     strings[firstIndex] = strings[secondIndex]
     strings[secondIndex] = tmp
    
- }     
+}
+
 func bubbleSort() {
     
     for i in 0 ..< words.count{
@@ -24,10 +25,10 @@ func bubbleSort() {
                 swap(strings:&words, firstIndex: j, secondIndex: j-1)
             }
         }
-        print(words)
+        
     }
+    print(words)
 }
-
 
 bubbleSort()                   
 
